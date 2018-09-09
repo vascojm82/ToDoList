@@ -104,7 +104,7 @@
        localStorage.clear();
 
        // Add ToDo List to local storage (like Cookies)
-       localStorage.setItem("todolist", JSON.stringify(list));
+       localStorage.setItem("todolist", JSON.stringify(list));		//Turn serialized array(stringified) back to a normal JS Array
 
        parsedListArray = JSON.parse(localStorage.getItem("todolist"));
 
